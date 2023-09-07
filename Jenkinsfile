@@ -15,7 +15,7 @@ pipeline {
                 emailext( attachLog: true, 
                 body: 'Unit and Integration tests were successful', 
                 subject: 'Test Stage Notification', 
-                to: 'kaimonrdb@gmail.com')
+                to: 'kaimonpippin@gmail.com')
                 
             }
         }
@@ -32,7 +32,7 @@ pipeline {
                 emailext( attachLog: true, 
                 body: 'Security scan was successful', 
                 subject: 'Security Scan Stage Notification', 
-                to: 'kaimonrdb@gmail.com')
+                to: 'kaimonpippin@gmail.com')
             }
         }
         stage ('Deploy to Staging') {
